@@ -1,0 +1,8 @@
+test1:
+  user:
+    username : zhangsan
+    age : 18
+    toString: the age of ${test1.user.username} is ${test1.user.age}
+spring:
+  profiles:
+    active: product
