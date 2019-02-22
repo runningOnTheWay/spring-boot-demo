@@ -1,5 +1,0 @@
-<root>
-    <item name='org.springframework.web.bind.annotation.RestController'>
-        <annotation name='java.lang.Deprecated'/>
-    </item>
-</root>
