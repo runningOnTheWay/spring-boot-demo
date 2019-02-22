@@ -1,4 +1,4 @@
-package cn.newbie.design_pattern;
+package cn.newbie.singleton;
 
 public class Test {
   public static void main(String[] args){

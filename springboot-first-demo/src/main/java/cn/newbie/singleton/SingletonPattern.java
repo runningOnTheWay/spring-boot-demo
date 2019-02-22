@@ -1,4 +1,4 @@
-package cn.newbie.design_pattern;
+package cn.newbie.singleton;
 
 public class SingletonPattern {
   private static SingletonPattern singletonPattern;
