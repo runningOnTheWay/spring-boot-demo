@@ -1,4 +1,4 @@
-package cn.newbie.BuilderPattern;
+package cn.newbie.builderPattern;
 
 import java.util.ArrayList;
 import java.util.List;

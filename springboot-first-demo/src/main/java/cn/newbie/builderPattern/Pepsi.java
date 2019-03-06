@@ -1,4 +1,4 @@
-package cn.newbie.BuilderPattern;
+package cn.newbie.builderPattern;
 
 public class Pepsi extends ColdDrink {
   @Override

@@ -1,4 +1,4 @@
-package cn.newbie.BuilderPattern;
+package cn.newbie.builderPattern;
 
 public interface Packing {
   public String pack();

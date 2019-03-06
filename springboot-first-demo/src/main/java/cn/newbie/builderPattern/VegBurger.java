@@ -1,4 +1,4 @@
-package cn.newbie.BuilderPattern;
+package cn.newbie.builderPattern;
 
 public class VegBurger extends Burger {
   @Override
@@ -10,4 +10,6 @@ public class VegBurger extends Burger {
   public float price() {
     return 25.0f;
   }
+
+
 }
