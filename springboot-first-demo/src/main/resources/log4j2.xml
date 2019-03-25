@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration status="OFF" monitorInterval="30">
+    <Properties>
+        <Property name="LOG_PATTERN">
+             %5p ${hostName} -&#45;&#45; [%15.15t] %-40.40c{1.}===== %d{yyyy-MM-dd HH:mm:ss.SSS}: %m%n%ex
+        </Property>
+        <Property name="LOG_FILE_PATH">/var/log/spring-boot-log4j2</Property>
+    </Properties>
+    <Appenders>
+        <Console name="ConsoleAppender" target="SYSTEM_OUT" follow="true">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </Console>
+        <!-- Rolling File Appender -->
+
+    </Appenders>
+    <Loggers>
+        <!-- 用来单独指定日志的形式，比如要为指定包下的class指定不同的日志级别等。 -->
+        <!--<Logger name="com.easyjijin.demo.springbootlog4j2" level="debug" additivity="false">
+            <AppenderRef ref="ConsoleAppender" />
+            <AppenderRef ref="FileAppender"/>
+        </Logger>-->
+
+        <!-- AsyncRoot - 异步记录日志 - 需要LMAXDisruptor的支持 -->
+        <!-- <AsyncRootlevel="info" additivity="false">
+          <AppenderRef ref="Console"/>
+          <AppenderRef ref="FileAppender"/>
+        </AsyncRoot> -->
+
+        <!-- All < Trace < Debug < Info < Warn < Error < Fatal < OFF. -->
+        　　　　 <!-- 程序会打印高于或等于所设置级别的日志，设置的日志等级越高，打印出来的日志就越少。-->
+        <!-- 此level设置的日志级别，是过滤项目中输出的日志信息，和ThresholdFilter的level有所区别 -->
+        <Root level="INFO">
+            <AppenderRef ref="ConsoleAppender" />
+            <!--<AppenderRef ref="FileAppender"/>-->
+        </Root>
+    </Loggers>
+</Configuration>

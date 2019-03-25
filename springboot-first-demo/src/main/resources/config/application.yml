@@ -34,3 +34,11 @@ test:
       long-delay: delay-long-routing
       compensating: formal-compensating-routing
       log: formal-log-routing
+---
+#热部署生效
+#spring:
+#  devtools:
+#    restart:
+#      enabled: true
+##设置重启的目录
+#      additional-paths: src/main/java
