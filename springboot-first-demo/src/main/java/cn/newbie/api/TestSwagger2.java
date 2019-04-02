@@ -1,10 +1,11 @@
 package cn.newbie.api;
 
 import io.swagger.annotations.*;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.apache.catalina.servlet4preview.http.HttpServletRequest;
+import org.springframework.web.bind.annotation.*;
+import springfox.documentation.annotations.ApiIgnore;
+
+import javax.servlet.http.HttpServlet;
 
 @Api(value = "TestSwagger2")
 @RestController
@@ -44,5 +45,15 @@ public class TestSwagger2 {
      **/
     boolean bb = false;
     return bb;
+  }
+  @ApiOperation(value = "test测试4", notes = "test190402",response = TestResDto.class)
+  @RequestMapping(value = "/test4", method = RequestMethod.POST)
+  public Object testSwagger24(@RequestBody TestDto testDto, @ApiIgnore HttpServletRequest request){
+    /**
+     * 这种方式参数为query里
+     **/
+//    boolean bb = false;
+    TestResDto testResDto = new TestResDto();
+    return testResDto;
   }
 }

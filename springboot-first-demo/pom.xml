@@ -104,27 +104,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-log4j2</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.apache.kafka</groupId>
-			<artifactId>kafka-clients</artifactId>
-			<version>0.10.2.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.kafka</groupId>
-			<artifactId>kafka_2.10</artifactId>
-			<version>0.10.2.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.kafka</groupId>
-			<artifactId>kafka-log4j-appender</artifactId>
-			<version>0.10.2.0</version>
-		</dependency>
 		<!-- https://mvnrepository.com/artifact/net.logstash.log4j/jsonevent-layout -->
-		<dependency>
-			<groupId>net.logstash.log4j</groupId>
-			<artifactId>jsonevent-layout</artifactId>
-			<version>1.7</version>
-		</dependency>
 	</dependencies>
 
 	<build>
