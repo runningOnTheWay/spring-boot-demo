@@ -6,3 +6,39 @@ test1:
 spring:
   profiles:
     active: product
+---
+##rabbitmq
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+---
+test:
+  mq:
+    queue:
+      number: formal-number-queue
+      long: formal-long-queue
+      long-delay: delay-long-queue
+      compensating: formal-log-queue
+      log: formal-compensating-queue
+    exchange:
+      formal-direct: formal-direct-exchange
+      delay-direct: delay-direct-exchange
+      formal-topic: formal-topic-exchange
+      formal-fanout: formal-fanout-exchange
+    routing-key:
+      number: formal-number-routing
+      long: formal-long-routing
+      long-delay: delay-long-routing
+      compensating: formal-compensating-routing
+      log: formal-log-routing
+---
+#热部署生效
+#spring:
+#  devtools:
+#    restart:
+#      enabled: true
+##设置重启的目录
+#      additional-paths: src/main/java
