@@ -11,6 +11,7 @@ public class SpringbootFirstDemoApplicationTests {
 
 	@Test
 	public void contextLoads() {
+		System.out.printf("1");
 	}
 
 }

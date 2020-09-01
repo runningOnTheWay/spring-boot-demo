@@ -10,6 +10,6 @@ public class Receiver {
   //queue要指定需要监听的队列的名字
   @RabbitListener(queues = RabbitMQConfig.QUEUE)
   public void reveiverDirectQueue(User user){
-    log.info("【receiverDirectQueue监听到消息】" + user.toString());
+//    log.info("【receiverDirectQueue监听到消息】" + user.toString());
   }
 }
