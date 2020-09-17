@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.Set;
+import java.util.TreeSet;
+
 @Controller
 public class TestController {
     @Autowired
@@ -24,7 +27,7 @@ public class TestController {
     @RequestMapping(value="/hello1",method = RequestMethod.GET)
     @ResponseBody
     public String hello1(){
-
+        Set set = new TreeSet();
 //        return propertiesConfig.getName()+propertiesConfig.getAge();
         return propertiesConfig.getToString()+","+user2.getToString();
     }
