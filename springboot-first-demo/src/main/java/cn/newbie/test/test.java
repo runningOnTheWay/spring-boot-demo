@@ -16,9 +16,26 @@ public class test {
 
             Date date1 = new Date(d1*1000);
             String result1 = sf.format(date1);
-            System.out.printf("d:"+result+";d1:"+result1);
+//            System.out.printf("d:"+result+";d1:"+result1);
+
+
+            Class<?> aClass = Class.forName("cn.newbie.test.TestAbstract2");
+            TestAbstract o = (TestAbstract)aClass.newInstance();
+            String execute = o.execute();
+            System.out.println(execute);
+
+
+
+            Class<?> bClass = Class.forName("cn.newbie.test.TestAbstract");
+            TestAbstract testAbstract = (TestAbstract)bClass.newInstance();
+            String execute1 = testAbstract.execute();
+            System.out.println(execute1);
+
+
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+
     }
 }
