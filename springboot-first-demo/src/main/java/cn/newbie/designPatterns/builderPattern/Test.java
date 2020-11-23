@@ -1,4 +1,4 @@
-package cn.newbie.builderPattern;
+package cn.newbie.designPatterns.builderPattern;
 
 public class Test {
   public static void main(String[] args){
