@@ -1,10 +1,10 @@
-package cn.newbie.designPatterns.factory.simple;
+package cn.newbie.designPatterns.factory.simple_1;
 
 public class SimpleFactory {
 
     public static Product createProduct(int productConstant){
 
-        Product product = null;
+        Product product;
 
         switch (productConstant){
             case ProductConstant.product_1:
@@ -14,6 +14,7 @@ public class SimpleFactory {
                 product = new Product_2();
                 return product;
                 default:
+                    product = null;
         }
 
         return product;
