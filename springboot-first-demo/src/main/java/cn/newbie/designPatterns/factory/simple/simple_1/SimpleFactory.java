@@ -2,9 +2,9 @@ package cn.newbie.designPatterns.factory.simple.simple_1;
 
 public class SimpleFactory {
 
-    public static Product createProduct(int productConstant){
+    public static IProduct createProduct(int productConstant){
 
-        Product product;
+        IProduct product;
 
         switch (productConstant){
             case ProductConstant.product_1:
