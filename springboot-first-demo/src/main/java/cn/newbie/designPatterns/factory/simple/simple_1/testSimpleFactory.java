@@ -1,4 +1,4 @@
-package cn.newbie.designPatterns.factory.simple_1;
+package cn.newbie.designPatterns.factory.simple.simple_1;
 
 public class testSimpleFactory {
     public static void main(String[] args) {

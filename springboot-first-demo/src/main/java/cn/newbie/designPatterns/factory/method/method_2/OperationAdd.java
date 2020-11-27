@@ -1,6 +1,7 @@
-package cn.newbie.designPatterns.factory.simple_2;
+package cn.newbie.designPatterns.factory.method.method_2;
 
-public class OperationAdd extends Operation{
+public class OperationAdd extends Operation {
+
     @Override
     public Double getResult() {
 

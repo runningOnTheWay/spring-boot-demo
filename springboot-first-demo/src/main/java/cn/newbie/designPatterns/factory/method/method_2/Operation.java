@@ -1,10 +1,9 @@
-package cn.newbie.designPatterns.factory.simple_2;
+package cn.newbie.designPatterns.factory.method.method_2;
 
 public class Operation {
     private Double number_A;
 
     private Double number_B;
-
 
     public Double getResult(){
         Double result = 0d;

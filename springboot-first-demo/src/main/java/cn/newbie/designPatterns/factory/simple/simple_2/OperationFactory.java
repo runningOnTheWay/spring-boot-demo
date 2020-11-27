@@ -1,4 +1,4 @@
-package cn.newbie.designPatterns.factory.simple_2;
+package cn.newbie.designPatterns.factory.simple.simple_2;
 
 public class OperationFactory {
     public static Operation getOperation(String operationVal){
